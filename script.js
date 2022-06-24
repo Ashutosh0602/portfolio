@@ -44,31 +44,31 @@ document.getElementsByClassName('skill')[0].addEventListener("wheel",(e)=>{
 })
 
 document.getElementsByClassName('skill')[0].addEventListener("touchmove",(e)=>{
-    if(scrollT===10){
+    if(scrollT===5){
         document.getElementsByClassName('conatiner_skill_part1')[0].style.visibility='visible'
     }
-    if(scrollT===20){
+    if(scrollT===10){
         document.getElementsByClassName('conatiner_skill_part1')[1].style.visibility='visible'
     }
-    if(scrollT===30){
+    if(scrollT===12){
         document.getElementsByClassName('conatiner_skill_part1')[2].style.visibility='visible'
     }
-    if(scrollT===40){
+    if(scrollT===20){
         document.getElementsByClassName('conatiner_skill_part1')[3].style.visibility='visible'
     }
-    if(scrollT===50){
+    if(scrollT===25){
         document.getElementsByClassName('conatiner_skill_part1')[4].style.visibility='visible'
     }
-    if(scrollT===60){
+    if(scrollT===30){
         document.getElementsByClassName('conatiner_skill_part1')[5].style.visibility='visible'
     }
-    if(scrollT===70){
+    if(scrollT===35){
         document.getElementsByClassName('conatiner_skill_part1')[6].style.visibility='visible'
     }
-    if(scrollT===80){
+    if(scrollT===40){
         document.getElementsByClassName('conatiner_skill_part1')[7].style.visibility='visible'
     }
-    if(scrollT===90){
+    if(scrollT===45){
         document.getElementsByClassName('section2')[0].style.display='block'
     }
     scrollT++;
