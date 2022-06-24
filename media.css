@@ -1,0 +1,60 @@
+@media only screen and (max-width: 600px) {
+    .about_detail_heading{
+        font-size: 150%;
+        font-weight: 900;
+    }
+    .about_detail_heading_span{
+        color: rgb(150, 120, 0);
+        font-size: 1.5rem;
+    }
+    .about_detail_myself{
+
+    }
+    .intro_about{
+        display: block;
+        padding: 2rem;
+    }
+    .about_img_upper{
+        display: block;
+        padding: auto;
+        text-align: center;
+    }
+    .about_img_upper_class{
+        width: 50%;
+    }
+    .about_detail_heading_blink{
+        font-size: 1.5rem;
+    }
+    .about_img{
+        display: none;
+    }
+    .container_skill{
+        display: none;
+    }
+    .conatiner_skill_part{
+        width: 50%;
+    }
+    .project{
+        margin-bottom: 10rem;
+    }
+    .project_container_details_name{
+        width:90%;
+        margin: 5%;
+    }
+    .contact_about{
+        background-color: rgb(73, 73, 73);
+        display: block;
+        height: 100%;
+        
+    }
+    .contact_form{
+        clip-path: none;
+        padding-bottom: 5rem;
+    }
+    input , textarea{
+        width: 80%;
+    }
+    .about{
+        padding: 3rem 0 2rem 0;
+    }
+  }
