@@ -1,4 +1,7 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    .navBar_section{
+        justify-content: space-evenly;
+    }
     .about_detail_heading{
         font-size: 150%;
         font-weight: 900;
