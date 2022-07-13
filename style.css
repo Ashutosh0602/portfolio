@@ -61,6 +61,19 @@ main{
 .intro_about{
     display: flex;
     padding: 2rem;
+    animation: pop 0.5s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+@keyframes pop {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .about_img_upper{
     display: none;
@@ -139,7 +152,7 @@ main{
     text-align: center;
 }
 .navBar{
-    display: flex;
+    display: none;
     position: fixed;
     justify-content: space-between;
     top: 0;
@@ -150,9 +163,24 @@ main{
     transition: all 1s ease-in;
     color: whitesmoke;
     background-color: rgb(55, 55, 55);
+    /* opacity: 0; */
+}
+.navBar_active{
+   opacity: 1; 
+    /* transition: all 1s; */
+    animation: opac_1 0.3s ease-in-out;
+}
+@keyframes opac_1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.navBar.navBar_active{
+    display: flex;
+    /* transition: all 1s; */
 }
 .nav_logo{
-    width: 3%;
+    width: 3rem;
+    max-width: 10%;
     height: 3%;
     animation-name: logo_ch;
     animation-duration: 2s;
@@ -249,6 +277,26 @@ a{
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
 }
+.project_container_details_name_details_para{
+    padding-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+.project_container_details_name_details{
+    position: relative;
+}
+.project_container_details_name_details_head{
+    position: absolute;
+    font-size: 100%;
+    color: darkgrey;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    padding: 1rem;
+    top: 0%;
+    z-index: 100;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 @keyframes scroll_up {
     0%{
         opacity: 0;
@@ -272,6 +320,7 @@ a{
 .project_container_details_name_img_src{
     width: 100%;
     height: 20%;
+    border-bottom: 1px whitesmoke solid;
 }
 .project_container_details_name{
     width: 70%;
@@ -284,6 +333,7 @@ a{
     background-color: rgb(73, 73, 73);
     display: flex;
     height: 60vh;
+    margin-top: 8rem;
 }
 .contact_form{
     display: flex;
